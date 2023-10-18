@@ -1,52 +1,38 @@
 <style>
-body {
-	margin-top: 20px;
-}
-*{
-	margin: 0;
-}
-a{
-	text-decoration: none;
-	display: flex ;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+	* { margin: 0; }
 
-}
+	@font-face {
+		font-family: assistant-semiBold;
+		src: url(assets/Assistant-SemiBold.ttf);
+	}
 
-.banner{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-.support-israel__label{
-	color: blue;
-	font-weight: 900;
-	font-size: large;
-	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-.line{
-	height: 5px;
-	width: 100%;
-}
-.white{
-	background-color: white;
-}
-.blue{
-	background-color: blue;
-}
+	.support-israel__banner {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		border-block: solid 5px #0037b6;
+		margin: 6px;
+	}
 
+	.support-israel__label {
+		color: #0037b6;
+		font-size: 1.1rem;
+		font-family: assistant-semiBold;
+		text-align: center;
+		padding: 2px;
+		display: flex;
+		align-items: center;
+	}
 
-
-
+	img {
+		margin-right: 8px;
+		height: 1.3rem;
+	}
 </style>
-<div class="banner">
-	<div class="line blue"></div>
+<div class="support-israel__banner">
 	<div class="support-israel__label">
-		<img src="star-of-david.png" height="20px"  alt="">
+		<img src="assets/star-of-david.png" alt="star-of-david">
 		WE STAND WITH ISRAEL
 	</div>
-	<div class="line blue"></div>
-	<div class="line white"></div>
 </div>
